@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "
+	http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.joongang.mapper.IotMapper">
+	<insert id="insert">
+		insert into tbl_iot (humi, temp, fanA, fanB, red, green, blue)
+		values (#{humi}, #{temp}, #{fanA}, #{fanB}, #{red}, #{green}, #{blue})
+	</insert>
+	<select id="getList" resultType="com.joongang.domain.IotVO">
+		select @rownum := @rownum + 1 as rn , no, humi, temp, fanA, fanB, red, green, blue, date
+			from tbl_iot, (select @rownum := 0) A
+			order by rn desc LIMIT #{offset}, #{amount}
+	</select>
+</mapper>
