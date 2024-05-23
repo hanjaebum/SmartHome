@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beansProjectDescription>
 	<version>1</version>
+<<<<<<< HEAD
 	<pluginVersion><![CDATA[3.9.22.202204280911-RELEASE]]></pluginVersion>
 	<configSuffixes>
 		<configSuffix><![CDATA[xml]]></configSuffix>
@@ -11,6 +12,15 @@
 	<autoconfigs>
 		<config>src/main/webapp/WEB-INF/spring/mqtt-context.xml</config>
 	</autoconfigs>
+=======
+	<pluginVersion><![CDATA[2.5.0.201010141000-RC1]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[true]]></enableImports>
+	<configs>
+	</configs>
+>>>>>>> ad7c0221182cea9b7486a2d9fdd7083aeb8d3580
 	<configSets>
 	</configSets>
 </beansProjectDescription>
