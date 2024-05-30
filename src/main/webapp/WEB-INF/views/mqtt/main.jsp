@@ -13,6 +13,8 @@
 <link href="/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <!-- MetisMenu CSS -->
 <link href="/resources/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+<!-- Btn CSS -->
+<link href="/resources/dist/css/btn.css" rel="stylesheet">
 <!-- Custom CSS -->
 <link href="/resources/dist/css/sb-admin-2.css" rel="stylesheet">
 <!-- Custom Fonts -->
@@ -41,39 +43,64 @@
 	        <div class="col-sm-3" style="background-color:white;">
 	            <div class="panel panel-default">
 	                <div class="panel-heading">
-	                    <h3 class="panel-title">LED</h3>
-	                </div>
-	                <div class="panel-body">
-	                    <div class="form-group">
-	                        <input class="form-control" placeholder="red" id="red" type="text" autofocus>
-	                    </div>
-	                    <div class="form-group">
-	                        <input class="form-control" placeholder="green" id="green" type="text" value="">
-	                    </div>
-	                    <div class="form-group">
-	                        <input class="form-control" placeholder="blue" id="blue" type="text" value="">
-	                     </div>
-	                     <a id="led" class="btn btn-lg btn-success btn-block">Send</a>
-	                </div>
-	            </div>
-	            <div class="panel panel-default">
-	                <div class="panel-heading">
-	                    <h3 class="panel-title">FAN</h3>
+	                    <h3 class="panel-title">command</h3>
 	                </div>
 	                   <div class="panel-body">
 	                       <div class="row">
 	                           <div class="col-sm-6" style="background-color:white;">
-	                           <a id="fan" data-value="on-on" class="btn btn-lg btn-success btn-block">A On </br> B On</a>
+	                           <a id="command" data-value="open" class="btn btn-lg btn-success btn-block">DOOR <br> OPEN</a>
 	                           </div>
 	                           <div class="col-sm-6" style="background-color:white;">
-	                           <a id="fan" data-value="off-off" class="btn btn-lg btn-success btn-block">A Off </br> B Off</a></div>
+	                           <a id="command" data-value="close" class="btn btn-lg btn-success btn-block">DOOR <br> CLOSE</a></div>
 	                       </div>
 	                       <br/>
 	                       <div class="row">
 	                           <div class="col-sm-6" style="background-color:white;">
-	                           <a id="fan" data-value="on-off" class="btn btn-lg btn-success btn-block">A On </br> B Off</a></div>
+	                           <a id="command" data-value="on" class="btn btn-lg btn-success btn-block">FAN<br> ON</a></div>
 	                           <div class="col-sm-6" style="background-color:white;">
-	                           <a id="fan" data-value="off-on"class="btn btn-lg btn-success btn-block">A Off </br> B On</a></div>
+	                           <a id="command" data-value="off"class="btn btn-lg btn-success btn-block">FAN<br> OFF</a></div>
+	                       </div>
+	                       <br/>
+	                       <div class="row">
+	                           <div class="col-sm-6" style="background-color:white;">
+	                           <a id="command" data-value="1" class="btn btn-lg btn-success btn-block">ALERT<br> ON</a></div>
+	                           <div class="col-sm-6" style="background-color:white;">
+	                           <a id="command" data-value="0"class="btn btn-lg btn-success btn-block">ALERT<br> OFF</a></div>
+	                       </div>
+			        </div>
+		        </div>
+	            <div class="panel panel-default">
+	                <div class="panel-heading">
+	                    <h3 class="panel-title">LED</h3>
+	                </div>
+	                   <div class="panel-body">
+	                       <div class="row">
+	                           <div class="col-sm-6" style="background-color:white;">
+	                           <a id="led" data-value="red" class="btn btn-lg btn-success btn-block">RED</a>
+	                           </div>
+	                           <div class="col-sm-6" style="background-color:white;">
+	                           <a id="led" data-value="yellow" class="btn btn-lg btn-success btn-block">YELLOW</a></div>
+	                       </div>
+	                       <br/>
+	                       <div class="row">
+	                           <div class="col-sm-6" style="background-color:white;">
+	                           <a id="led" data-value="blue" class="btn btn-lg btn-success btn-block">BLUE</a></div>
+	                           <div class="col-sm-6" style="background-color:white;">
+	                           <a id="led" data-value="violet"class="btn btn-lg btn-success btn-block">VIOLET</a></div>
+	                       </div>
+	                       <br/>
+	                       <div class="row">
+	                           <div class="col-sm-6" style="background-color:white;">
+	                           <a id="led" data-value="orange" class="btn btn-lg btn-success btn-block">ORANGE</a></div>
+	                           <div class="col-sm-6" style="background-color:white;">
+	                           <a id="led" data-value="green"class="btn btn-lg btn-success btn-block">GREEN</a></div>
+	                       </div>
+	                       <br/>
+	                       <div class="row">
+	                           <div class="col-sm-6" style="background-color:white;">
+	                           <a id="led" data-value="white" class="btn btn-lg btn-success btn-block">WHITE</a></div>
+	                           <div class="col-sm-6" style="background-color:white;">
+	                           <a id="led" data-value="black" class="btn btn-lg btn-success btn-block">OFF</a></div>
 	                       </div>
 			        </div>
 		        </div>
@@ -104,7 +131,7 @@
 	                   		</div>
 	                   </div>
 		        	</div>
-		        	<div class="col-sm-3" style="background-color:white;">
+		        	<div class="col-sm-2" style="background-color:white;">
 		        		<div class="panel panel-default">
 			        		<div class="panel-heading">
 		                       <h3 class="panel-title">LED</h3>
@@ -116,7 +143,31 @@
 	                   		</div>
 	                   </div>
 		        	</div>
-		        	<div class="col-sm-5" style="background-color:white;">
+    			    <div class="col-sm-2" style="background-color:white;">
+		        		<div class="panel panel-default">
+			        		<div class="panel-heading">
+		                       <h3 class="panel-title">ALERT</h3>
+		                   </div>
+		                   <div class="panel-body">
+		                       <div class="form-group">
+		                           <input id="s_alert" class="form-control" type="text" readonly="readonly">
+		                       </div>
+	                   		</div>
+	                   </div>
+		        	</div>
+		        	<div class="col-sm-2" style="background-color:white;">
+		        		<div class="panel panel-default">
+			        		<div class="panel-heading">
+		                       <h3 class="panel-title">DOOR</h3>
+		                   </div>
+		                   <div class="panel-body">
+		                       <div class="form-group">
+		                           <input id="s_door" class="form-control" type="text" readonly="readonly">
+		                       </div>
+	                   		</div>
+	                   </div>
+		        	</div>
+					<div class="col-sm-2" style="background-color:white;">
 		        		<div class="panel panel-default">
 			        		<div class="panel-heading">
 		                       <h3 class="panel-title">FAN</h3>
@@ -128,6 +179,19 @@
 	                   		</div>
 	                   </div>
 		        	</div>
+		        	<div class="col-sm-12" style="background-color:white;">
+		        		<div class="panel panel-default">
+			        		<div class="panel-heading">
+		                       <h3 class="panel-title">LCD</h3>
+		                   </div>
+		                   <div class="panel-body">
+		                       <div class="form-group">
+		                           <input id="s_lcd" class="form-control" type="text" readonly="readonly">
+		                       </div>
+	                   		</div>
+	                   </div>
+		        	</div>
+		        	
 		        </div>
 		        <div class="row">
 			        <div class="col-lg-12">
@@ -160,20 +224,29 @@
 <script type="text/javascript" src="/resources/js/reply.js"></script>
 <script>
 $(function() {
-	startTimer();
+	startTimer()
 	function startTimer() {
 	    timer = setInterval(
 	        function() {
-	        	$.getJSON("/mqtt/getIotState",
+	        	$.getJSON("/mqtt/getSmartHomeState",
 	        	    function(iot){
 	        		    console.log(iot);
-	        		    $("#s_temp").attr("value", iot.temp+"\u2103");
-	        		    $("#s_humi").attr("value", iot.humi);
+	        		    $("#s_temp").attr("value", iot.temsensor+"\u2103");
+	        		    $("#s_humi").attr("value", iot.humidity);
 	        		    if (iot.red != null) {
 	        		    	$("#s_led").attr("value", iot.red + "," + iot.green + "," + iot.blue);
 	        		    }
-	        		    if (iot.fanA != null) {
-	        		    	$("#s_fan").attr("value", iot.fanA + "," + iot.fanB);
+	        		    if (iot.fan != null) {
+	        		    	$("#s_fan").attr("value", iot.fanState);
+	        		    }
+	        		    if (iot.motor != null) {
+	        		    	$("#s_door").attr("value", iot.motorState);
+	        		    }
+	        		    if (iot.irsensor != null) {
+	        		    	$("#s_alert").attr("value", iot.irsensorState);
+	        		    }
+	        		    if (iot.lcd != null) {
+	        		    	$("#s_lcd").attr("value", iot.lcd);
 	        		    }
 	        	});
 	        	showList();
@@ -189,13 +262,16 @@ $(function() {
 			    	return;
 			    }
 			    for (var i = 0, len = list.length || 0; i < len; i++) {
-			    	str += "<li class='left clearfix' data-no='"+list[i].no+"'>";
-			    	str += "  <div><div class='header'><strong class='primary-font'>["+list[i].no;
-			    	str += "] Humidity " + list[i].humi + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "Temperature " + list[i].temp;
-			    	str += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Led " + list[i].red + ", " + list[i].green + ", " + list[i].blue;
-			    	str += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fan " + list[i].fanA + ", " + list[i].fanB + "</strong>";
+			    	str += "<li class='left clearfix' data-no='"+list[i].id+"'>";
+			    	str += "  <div><div class='header'><strong class='primary-font'>["+list[i].id;
+			    	str += "] Humidity " + list[i].humidity +"%" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "Temperature " + list[i].temsensor +"°C";
+			    	str += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LED " + list[i].red + ", " + list[i].green + ", " + list[i].blue;
+			    	str += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alert " + list[i].irsensorState;
+			    	str += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Door " + list[i].motorState;
+			    	str += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAN " + list[i].fanState;
+			    	str += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LCD " + list[i].lcd + "</strong>";
 			    	str += "<small class='pull-right text-muted'>";
-			    	str += displayTime(list[i].date)+"</small></div></div></li>";
+			    	str += displayTime(list[i].time)+"</small></div></div></li>";
     			}
 			    $(".chat").html(str);
 		}).fail(function(xhr, status, err) {
@@ -221,33 +297,15 @@ function displayTime(timeValue) {
 		+ (hh > 9 ? '' : '0') + hh, ':', (mi > 9 ? '' : '0') + mi, ':', (ss > 9 ? '' : '0') + ss ].join('');
 }
 
-$(".btn-success").on("click", 
-    function (error) {
-		var id = $(this).attr("id");
-		var arr0=arr1=arr2=arr3="";
-		arr0 = id;
-		if (id == "led") {
-			arr1 = $("#red").val();
-			arr2 = $("#green").val();
-			arr3 = $("#blue").val();
-		} else if (id == "fan") {
-			var buf = $(this).data("value").split("-");
-			arr0 = "f_a";
-			arr1 = buf[0];
-			arr2 = "f_b";
-			arr3 = buf[1];
-		}
-		//alert(arr0+"/"+arr1+"/"+arr2+"/"+arr3);
-		$.get("/mqtt/pubish/", {"arr0":arr0, "arr1":arr1, "arr2":arr2, "arr3":arr3} ,
+$(".btn-success").on("click", function(e) {
+	let command = $(this).data("value")
+	console.log(command)
+	$.get("/mqtt/pubish/", {"command":command} ,
 			function(result) {
 			    alert(result);
-		}).fail(
-		    function(xhr, status, err) {
-			    if (error) {
-				    error();
-				}
-		});			
-});
+		})
+})
+		
 </script>
 </body>
 </html>

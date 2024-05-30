@@ -3,7 +3,6 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.joongang</groupId>
-<<<<<<< HEAD
 	<artifactId>SmartHome</artifactId>
 	<name>SmartHome</name>
 	<packaging>war</packaging>
@@ -21,17 +20,6 @@
 		<org.springframework-version>5.3.21</org.springframework-version>
 		<org.aspectj-version>1.9.0</org.aspectj-version>
 		<org.slf4j-version>1.7.25</org.slf4j-version>
-=======
-	<artifactId>controller</artifactId>
-	<name>SpringProject</name>
-	<packaging>war</packaging>
-	<version>1.0.0-BUILD-SNAPSHOT</version>
-	<properties>
-		<java-version>11</java-version>
-		<org.springframework-version>5.3.21</org.springframework-version>
-		<org.aspectj-version>1.6.10</org.aspectj-version>
-		<org.slf4j-version>1.6.6</org.slf4j-version>
->>>>>>> ad7c0221182cea9b7486a2d9fdd7083aeb8d3580
 	</properties>
 	<dependencies>
 		<!-- Spring -->
@@ -54,7 +42,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
-<<<<<<< HEAD
 			<artifactId>spring-jdbc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
@@ -78,12 +65,6 @@
 			<artifactId>spring-security-web</artifactId>
 			<version>5.3.13.RELEASE</version>
 		</dependency>
-=======
-			<artifactId>spring-test</artifactId>
-			<version>${org.springframework-version}</version>
-		</dependency>
-		
->>>>>>> ad7c0221182cea9b7486a2d9fdd7083aeb8d3580
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
@@ -91,7 +72,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
-<<<<<<< HEAD
 			<artifactId>spring-security-core</artifactId>
 			<version>5.3.13.RELEASE</version>
 		</dependency>
@@ -134,27 +114,17 @@
 	    </dependency>
 
 				
-=======
-			<artifactId>spring-security-web</artifactId>
-			<version>5.3.13.RELEASE</version>
-		</dependency>
-		
->>>>>>> ad7c0221182cea9b7486a2d9fdd7083aeb8d3580
 		<!-- AspectJ -->
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
 			<version>${org.aspectj-version}</version>
-<<<<<<< HEAD
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
 			<version>${org.aspectj-version}</version>
 		</dependency>
-=======
-		</dependency>	
->>>>>>> ad7c0221182cea9b7486a2d9fdd7083aeb8d3580
 		
 		<!-- Logging -->
 		<dependency>
@@ -177,7 +147,6 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-<<<<<<< HEAD
 			<version>1.2.17</version>
 		</dependency>
 		
@@ -187,45 +156,6 @@
 			<version>1.16</version>
 		</dependency>
 
-=======
-			<version>1.2.15</version>
-			<exclusions>
-				<exclusion>
-					<groupId>javax.mail</groupId>
-					<artifactId>mail</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>javax.jms</groupId>
-					<artifactId>jms</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>com.sun.jdmk</groupId>
-					<artifactId>jmxtools</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>com.sun.jmx</groupId>
-					<artifactId>jmxri</artifactId>
-				</exclusion>
-			</exclusions>
-			<scope>runtime</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-api</artifactId>
-			<version>2.18.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-			<version>2.18.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-slf4j-impl</artifactId>
-			<version>2.18.0</version>
-		</dependency>
->>>>>>> ad7c0221182cea9b7486a2d9fdd7083aeb8d3580
 		<!-- @Inject -->
 		<dependency>
 			<groupId>javax.inject</groupId>
@@ -241,15 +171,12 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-<<<<<<< HEAD
 			<groupId>net.coobird</groupId>
 			<artifactId>thumbnailator</artifactId>
 			<version>0.4.8</version>
 		</dependency>
 
 		<dependency>
-=======
->>>>>>> ad7c0221182cea9b7486a2d9fdd7083aeb8d3580
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
 			<version>2.1</version>
@@ -260,7 +187,6 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-<<<<<<< HEAD
 		<dependency>
 			<groupId>org.projectlombok</groupId> 
 			<artifactId>lombok</artifactId>
@@ -291,58 +217,10 @@
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-xml</artifactId>
 			<version>2.9.6</version>
-=======
-		
-		<!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
-		<dependency>
-			<groupId>com.zaxxer</groupId>
-			<artifactId>HikariCP</artifactId>
-			<version>2.7.4</version>
-		</dependency>
-	
-		<!-- https://mvnropository.com/artifact/org.mybatis/mybatis -->
-		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis</artifactId>
-			<version>3.4.6</version>
-		</dependency>
-		
-		<!-- https://mvnropository.com/artifact/org.mybatis/mybatis-spring -->
-		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis-spring</artifactId>
-			<version>1.3.2</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-tx</artifactId>
-			<version>${org.springframework-version}</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-jdbc</artifactId>
-			<version>${org.springframework-version}</version>
-		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4 -->
-		<dependency>
-			<groupId>org.bgee.log4jdbc-log4j2</groupId>
-			<artifactId>log4jdbc-log4j2-jdbc4</artifactId>
-			<version>1.16</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>com.googlecode.json-simple</groupId>
-			<artifactId>json-simple</artifactId>
-			<version>1.1.1</version>
->>>>>>> ad7c0221182cea9b7486a2d9fdd7083aeb8d3580
 		</dependency>
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
-<<<<<<< HEAD
 			<version>2.8.2</version>
 		</dependency>
 		<dependency>
@@ -356,60 +234,17 @@
 			<version>2.3.0</version>
 		</dependency>
 	
-=======
-			<version>2.8.7</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>2.9.5</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.dataformat</groupId>
-			<artifactId>jackson-dataformat-xml</artifactId>
-			<version>2.9.5</version>
-		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/net.coobird/thumbnailator -->
-		<dependency>
-			<groupId>net.coobird</groupId>
-			<artifactId>thumbnailator</artifactId>
-			<version>0.4.19</version>
-		</dependency>
-		
->>>>>>> ad7c0221182cea9b7486a2d9fdd7083aeb8d3580
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 			<scope>test</scope>
-<<<<<<< HEAD
 		</dependency>        
-=======
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.32</version>
-			<scope>provided</scope>
-		</dependency>    
->>>>>>> ad7c0221182cea9b7486a2d9fdd7083aeb8d3580
 	</dependencies>
     <build>
         <plugins>
             <plugin>
-<<<<<<< HEAD
-=======
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>3.2.0</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                </configuration>
-            </plugin>
-            <plugin>
->>>>>>> ad7c0221182cea9b7486a2d9fdd7083aeb8d3580
                 <artifactId>maven-eclipse-plugin</artifactId>
                 <version>2.9</version>
                 <configuration>

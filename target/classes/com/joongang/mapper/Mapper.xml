@@ -4,4 +4,4 @@
  	<select id="getList" resultType="map">
         SELECT * FROM APEX_040000.joinTable
     </select>
- </mapper>
+</mapper>

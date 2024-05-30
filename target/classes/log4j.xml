@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
-=======
-<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">
->>>>>>> ad7c0221182cea9b7486a2d9fdd7083aeb8d3580
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
 
 	<!-- Appenders -->
@@ -35,7 +31,6 @@
 	<logger name="org.springframework.web">
 		<level value="info" />
 	</logger>
-<<<<<<< HEAD
 	
 		<!-- SQL Logger -->
 	<logger name="jdbc.sqltiming" additivity="false">
@@ -66,12 +61,6 @@
 		<!-- Root Logger -->
 	<root>
 		<priority value="info" />
-=======
-
-	<!-- Root Logger -->
-	<root>
-		<priority value="warn" />
->>>>>>> ad7c0221182cea9b7486a2d9fdd7083aeb8d3580
 		<appender-ref ref="console" />
 	</root>
 	

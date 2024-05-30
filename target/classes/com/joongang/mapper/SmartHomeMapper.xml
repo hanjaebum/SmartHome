@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "
+	http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.joongang.mapper.SmartHomeMapper">
+	<insert id="insert">
+		insert into smarthome (red, blue, green, irsensor, temsensor, motor, fan, lcd, humidity) 
+		values (#{red}, #{blue}, #{green}, #{irsensor}, #{temsensor}, #{motor}, #{fan}, #{lcd}, #{humidity})
+	</insert>
+	
+	<!-- <select id="getList" resultType="com.joongang.domain.SmartHomeVO">
+        select  @rownum := @rownum + 1 as rn ,id, red, blue, green, irsensor, temsensor, motor, fan, lcd, humidity, time
+        from smarthome , (select @rownum := 0) A
+        order by rn desc LIMIT #{offset}, #{amount}
+	</select> -->
+	<select id="getList" resultType="com.joongang.domain.SmartHomeVO">
+        select  id, red, blue, green, irsensor, temsensor, motor, fan, lcd, humidity, time
+        from smarthome
+        order by id desc
+	</select>
+</mapper>

@@ -1,0 +1,73 @@
+/* Command Button Styles */
+
+.btn-command {
+    display: inline-block;
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: -9999px; /* Hide text */
+    border: none;
+    cursor: pointer;
+}
+
+.btn-command.open {
+    background-image: url('path/to/open-icon.png'); /* Replace 'path/to/open-icon.png' with your actual path */
+}
+
+.btn-command.close {
+    background-image: url('path/to/close-icon.png'); /* Replace 'path/to/close-icon.png' with your actual path */
+}
+
+.btn-command.on {
+    background-image: url('path/to/on-icon.png'); /* Replace 'path/to/on-icon.png' with your actual path */
+}
+
+.btn-command.off {
+    background-image: url('path/to/off-icon.png'); /* Replace 'path/to/off-icon.png' with your actual path */
+}
+
+/* LED Button Styles */
+
+.btn-led {
+    display: inline-block;
+    width: 60px; /* Adjust width as needed */
+    height: 60px; /* Adjust height as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: -9999px; /* Hide text */
+    border: none;
+    cursor: pointer;
+}
+
+.btn-led.red {
+    background-image: url('path/to/red-icon.png'); /* Replace 'path/to/red-icon.png' with your actual path */
+}
+
+.btn-led.yellow {
+    background-image: url('path/to/yellow-icon.png'); /* Replace 'path/to/yellow-icon.png' with your actual path */
+}
+
+.btn-led.blue {
+    background-image: url('path/to/blue-icon.png'); /* Replace 'path/to/blue-icon.png' with your actual path */
+}
+
+.btn-led.violet {
+    background-image: url('path/to/violet-icon.png'); /* Replace 'path/to/violet-icon.png' with your actual path */
+}
+
+.btn-led.orange {
+    background-image: url('path/to/orange-icon.png'); /* Replace 'path/to/orange-icon.png' with your actual path */
+}
+
+.btn-led.green {
+    background-image: url('path/to/green-icon.png'); /* Replace 'path/to/green-icon.png' with your actual path */
+}
+
+.btn-led.white {
+    background-image: url('path/to/white-icon.png'); /* Replace 'path/to/white-icon.png' with your actual path */
+}
+
+.btn-led.black {
+    background-image: url('path/to/black-icon.png'); /* Replace 'path/to/black-icon.png' with your actual path */
+}
